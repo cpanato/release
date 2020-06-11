@@ -82,6 +82,7 @@ steps:
   - "TOOL_REPO=${_TOOL_REPO}"
   - "TOOL_BRANCH=${_TOOL_BRANCH}"
   - HOME=/root
+  - DOCKER_CLI_EXPERIMENTAL=enabled
   secretEnv:
   - GITHUB_TOKEN
   args:
