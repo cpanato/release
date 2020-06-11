@@ -75,6 +75,9 @@ steps:
   - "--tmpdir=/workspace/tmp"
   - "--type=${_TYPE}"
 
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['pull', 'docker.io/library/debian:stretch-slim']
+
 - name: gcr.io/k8s-staging-releng/k8s-cloud-builder:${_KUBE_CROSS_VERSION}
   dir: "go/src/k8s.io/release"
   env:
