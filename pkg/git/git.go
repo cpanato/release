@@ -443,6 +443,7 @@ func (r *Repo) Cleanup() error {
 func (r *Repo) RevParse(rev string) (string, error) {
 	matched, err := regexp.MatchString(`v\d+\.\d+\.\d+.*`, rev)
 	if err != nil {
+		fmt.Println("****1******")
 		return "", err
 	}
 	if !matched {
@@ -453,6 +454,7 @@ func (r *Repo) RevParse(rev string) (string, error) {
 	// Try to resolve the rev
 	ref, err := r.inner.ResolveRevision(plumbing.Revision(rev))
 	if err != nil {
+		fmt.Println("****2******")
 		return "", err
 	}
 

@@ -20,8 +20,6 @@ import (
 	"regexp"
 )
 
-const (
-	branchRegexStr = `master|release-([0-9]{1,})\.([0-9]{1,})(\.([0-9]{1,}))*$`
-)
+const branchRegexStr = `master|release-([0-9]{1,})\.([0-9]{1,})(\.([0-9]{1,}))*$`
 
 var BranchRegex = regexp.MustCompile(branchRegexStr)

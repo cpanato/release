@@ -48,9 +48,9 @@ import (
 )
 
 const (
-	DefaultToolRepo   = "release"
-	DefaultToolBranch = git.DefaultBranch
-	DefaultToolOrg    = git.DefaultGithubOrg
+	DefaultToolRepo = "release"
+	DefaultToolRef  = git.DefaultBranch
+	DefaultToolOrg  = git.DefaultGithubOrg
 	// TODO(vdf): Need to reference K8s Infra project here
 	DefaultKubernetesStagingProject = "kubernetes-release-test"
 	DefaultRelengStagingProject     = "k8s-staging-releng"
@@ -189,10 +189,10 @@ func GetToolRepo() string {
 	return util.EnvDefault("TOOL_REPO", DefaultToolRepo)
 }
 
-// GetToolBranch checks if the 'TOOL_BRANCH' environment variable is set.
-// If 'TOOL_BRANCH' is non-empty, it returns the value. Otherwise, it returns DefaultToolBranch.
-func GetToolBranch() string {
-	return util.EnvDefault("TOOL_BRANCH", DefaultToolBranch)
+// GetToolRef checks if the 'TOOL_REF' environment variable is set.
+// If 'TOOL_REF' is non-empty, it returns the value. Otherwise, it returns DefaultToolRef.
+func GetToolRef() string {
+	return util.EnvDefault("TOOL_REF", DefaultToolRef)
 }
 
 // BuiltWithBazel determines whether the most recent Kubernetes release was built with Bazel.
