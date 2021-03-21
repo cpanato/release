@@ -18,6 +18,7 @@ package anago
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/blang/semver"
 	"github.com/pkg/errors"
@@ -229,6 +230,8 @@ func (s *Stage) Run() error {
 
 	logger := log.NewStepLogger(9)
 	logger.Infof("Using krel version:\n%s", version.Get().String())
+
+	logger.Infof("Using CUSTOM ORG/REPO/BRANCH:\n%s/%s/%s", os.Getenv("TOOL_ORG"), os.Getenv("TOOL_REPO"), os.Getenv("TOOL_REF"))
 
 	logger.WithStep().Info("Validating options")
 	if err := s.client.ValidateOptions(); err != nil {
