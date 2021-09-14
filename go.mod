@@ -33,7 +33,7 @@ require (
 	github.com/yuin/goldmark v1.4.0
 	golang.org/x/mod v0.5.0
 	golang.org/x/net v0.0.0-20210525063256-abc453219eb5
-	golang.org/x/oauth2 v0.0.0-20210805134026-6f1e6394065a
+	golang.org/x/oauth2 v0.0.0-20210819190943-2bc19b11175f
 	golang.org/x/tools v0.1.5
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
 	google.golang.org/api v0.54.0
@@ -42,7 +42,7 @@ require (
 	k8s.io/utils v0.0.0-20210305010621-2afb4311ab10
 	sigs.k8s.io/k8s-container-image-promoter v1.337.0
 	sigs.k8s.io/mdtoc v1.0.1
-	sigs.k8s.io/release-sdk v0.1.0
+	sigs.k8s.io/release-sdk v0.2.0
 	sigs.k8s.io/release-utils v0.3.0
 	sigs.k8s.io/yaml v1.2.0
 	sigs.k8s.io/zeitgeist v0.3.0
