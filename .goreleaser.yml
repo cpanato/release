@@ -10,8 +10,8 @@ before:
     - go mod tidy
     - git diff --exit-code go.mod go.sum
 
-gomod:
-  proxy: true
+# gomod:
+#   proxy: true
 
 builds:
   - id: krel
@@ -56,7 +56,7 @@ snapshot:
 
 release:
   github:
-    owner: kubernetes
+    owner: cpanato
     name: release
   prerelease: auto
 
