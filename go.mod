@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	cloud.google.com/go/storage v1.33.0
-	github.com/GoogleCloudPlatform/testgrid v0.0.38
+	github.com/GoogleCloudPlatform/testgrid v0.0.173
 	github.com/blang/semver/v4 v4.0.0
 	github.com/cheggaaa/pb/v3 v3.1.5
 	github.com/go-git/go-git/v5 v5.11.0
@@ -39,7 +39,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/apimachinery v0.29.3
 	sigs.k8s.io/bom v0.5.2-0.20230519223618-1ebaa9ce375f
-	sigs.k8s.io/mdtoc v1.2.1
+	sigs.k8s.io/mdtoc v1.2.2
 	sigs.k8s.io/promo-tools/v3 v3.6.0
 	sigs.k8s.io/release-sdk v0.11.0
 	sigs.k8s.io/release-utils v0.7.7
@@ -47,6 +47,7 @@ require (
 )
 
 require (
+	bitbucket.org/creachadair/stringset v0.0.11 // indirect
 	cloud.google.com/go v0.110.10 // indirect
 	cloud.google.com/go/compute v1.23.3 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
@@ -129,7 +130,7 @@ require (
 	github.com/emirpasic/gods v1.18.1 // indirect
 	github.com/fatih/color v1.15.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
-	github.com/fvbommel/sortorder v1.0.1 // indirect
+	github.com/fvbommel/sortorder v1.1.0 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible // indirect
 	github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376 // indirect
 	github.com/go-git/go-billy/v5 v5.5.0 // indirect
@@ -155,7 +156,7 @@ require (
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/snappy v0.0.4 // indirect
-	github.com/gomarkdown/markdown v0.0.0-20231222211730-1d6d20845b47 // indirect
+	github.com/gomarkdown/markdown v0.0.0-20240328165702-4d01890c35c0 // indirect
 	github.com/google/certificate-transparency-go v1.1.7 // indirect
 	github.com/google/gnostic-models v0.6.9-0.20230804172637-c7be7c783f49 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
